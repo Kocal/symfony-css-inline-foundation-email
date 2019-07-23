@@ -1,0 +1,30 @@
+{% apply inky|inline_css(source('@assets/foundation-email.css')) %}
+  <style>
+    {# Uncomment to import media queries #}
+{#    {{ source('@assets/foundation-email.css') }}#}
+  </style>
+
+  <style>
+    body {
+      background: #ffcc00 !important;
+    }
+  </style>
+
+  <table class="body">
+    <tr>
+      <td class="float-center" align="center" valign="top">
+
+        <center>
+          <container class="header">
+            <row>
+              <columns>
+                <h1>Hello world</h1>
+              </columns>
+            </row>
+          </container>
+        </center>
+
+      </td>
+    </tr>
+  </table>
+{% endapply %}
